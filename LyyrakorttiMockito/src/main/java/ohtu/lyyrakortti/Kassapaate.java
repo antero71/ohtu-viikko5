@@ -10,6 +10,8 @@ public class Kassapaate {
     }
 
     public void lataa(Lyyrakortti kortti, int summa) {
+        if(summa<0)
+            return;
         kortti.lataa(summa);
     }
 
