@@ -110,14 +110,14 @@ public class IntJoukko {
         } else if (alkioidenLkm == 1) {
             return "{" + ljono[0] + "}";
         } else {
-            String tuotos = "{";
+            String sisaltoString = "{";
             for (int i = 0; i < alkioidenLkm - 1; i++) {
-                tuotos += ljono[i];
-                tuotos += ", ";
+                sisaltoString += ljono[i];
+                sisaltoString += ", ";
             }
-            tuotos += ljono[alkioidenLkm - 1];
-            tuotos += "}";
-            return tuotos;
+            sisaltoString += ljono[alkioidenLkm - 1];
+            sisaltoString += "}";
+            return sisaltoString;
         }
     }
 
