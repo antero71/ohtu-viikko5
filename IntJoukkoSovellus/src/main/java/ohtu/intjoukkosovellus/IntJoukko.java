@@ -40,7 +40,6 @@ public class IntJoukko {
             ljono[0] = luku;
             alkioidenLkm++;
             return true;
-        } else {
         }
         if (!kuuluu(luku)) {
             ljono[alkioidenLkm] = luku;
@@ -68,13 +67,13 @@ public class IntJoukko {
                 on++;
             }
         }
-        if (on > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return on > 0 ? true : false;
     }
 
+    public boolean poistaKohdasta(int kohta){
+        return poistaNumero(kohta);
+    }
+    
     public boolean poista(int luku) {
         int kohta = -1;
         kohta = etsiPoistettavanKohta(luku, kohta);
@@ -94,7 +93,7 @@ public class IntJoukko {
         alkioidenLkm--;
         return true;
     }
-    
+
     private int etsiPoistettavanKohta(int luku, int kohta) {
         for (int i = 0; i < alkioidenLkm; i++) {
             if (luku == ljono[i]) {
@@ -177,15 +176,14 @@ public class IntJoukko {
     }
 
     public static IntJoukko erotus(IntJoukko a, IntJoukko b) {
-        IntJoukko z = new IntJoukko();
+        IntJoukko uusiJoukko = new IntJoukko();
         int[] aTaulu = a.toIntArray();
         int[] bTaulu = b.toIntArray();
-        kopioiTaulunSisaltoUuteenJoukkoon(aTaulu, z);
+        kopioiTaulunSisaltoUuteenJoukkoon(aTaulu, uusiJoukko);
         for (int i = 0; i < bTaulu.length; i++) {
-            z.poista(i);
+            uusiJoukko.poista(bTaulu[i]);
         }
-
-        return z;
+        return uusiJoukko;
     }
 
 }
