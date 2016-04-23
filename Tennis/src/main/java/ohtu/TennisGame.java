@@ -6,6 +6,10 @@ public class TennisGame {
     private int m_score2 = 0;
     private String player1Name;
     private String player2Name;
+    private int FOUR_POINTS = 4;
+    private int ONE_AHEAD = 1;
+    private int ONE_BEHIND = -1;
+    private int TWO_POINTS_AHEAD=2;
 
     public TennisGame(String player1Name, String player2Name) {
         this.player1Name = player1Name;
@@ -24,32 +28,14 @@ public class TennisGame {
         int tempScore=0;
         if (m_score1==m_score2)
         {
-            switch (m_score1)
-            {
-                case 0:
-                        score = "Love-All";
-                    break;
-                case 1:
-                        score = "Fifteen-All";
-                    break;
-                case 2:
-                        score = "Thirty-All";
-                    break;
-                case 3:
-                        score = "Forty-All";
-                    break;
-                default:
-                        score = "Deuce";
-                    break;
-                
-            }
+            score = tasapelit();
         }
-        else if (m_score1>=4 || m_score2>=4)
+        else if (m_score1>=FOUR_POINTS || m_score2>=FOUR_POINTS)
         {
-            int minusResult = m_score1-m_score2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
+            int difference = m_score1-m_score2;
+            if (difference==ONE_AHEAD) score ="Advantage player1";
+            else if (difference==ONE_BEHIND) score ="Advantage player2";
+            else if (difference>=TWO_POINTS_AHEAD) score = "Win for player1";
             else score ="Win for player2";
         }
         else
@@ -74,6 +60,30 @@ public class TennisGame {
                         break;
                 }
             }
+        }
+        return score;
+    }
+
+    private String tasapelit() {
+        String score;
+        switch (m_score1)
+        {
+            case 0:
+                score = "Love-All";
+                break;
+            case 1:
+                score = "Fifteen-All";
+                break;
+            case 2:
+                score = "Thirty-All";
+                break;
+            case 3:
+                score = "Forty-All";
+                break;
+            default:
+                score = "Deuce";
+                break;
+                
         }
         return score;
     }
