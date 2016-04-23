@@ -45,16 +45,20 @@ public class IntJoukko {
         if (!kuuluu(luku)) {
             ljono[alkioidenLkm] = luku;
             alkioidenLkm++;
-            if (alkioidenLkm % ljono.length == 0) {
-                int[] taulukkoOld = new int[ljono.length];
-                taulukkoOld = ljono;
-                kopioiTaulukko(ljono, taulukkoOld);
-                ljono = new int[alkioidenLkm + kasvatuskoko];
-                kopioiTaulukko(taulukkoOld, ljono);
-            }
+            lisaaJosAlkioidenlkmParillinen();
             return true;
         }
         return false;
+    }
+
+    private void lisaaJosAlkioidenlkmParillinen() {
+        if (alkioidenLkm % ljono.length == 0) {
+            int[] taulukkoOld = new int[ljono.length];
+            taulukkoOld = ljono;
+            kopioiTaulukko(ljono, taulukkoOld);
+            ljono = new int[alkioidenLkm + kasvatuskoko];
+            kopioiTaulukko(taulukkoOld, ljono);
+        }
     }
 
     public boolean kuuluu(int luku) {
