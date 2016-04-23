@@ -11,12 +11,7 @@ public class IntJoukko {
     private int alkioidenLkm;    // Tyhjässä joukossa alkioiden_määrä on nolla. 
 
     public IntJoukko() {
-        ljono = new int[KAPASITEETTI];
-        for (int i = 0; i < ljono.length; i++) {
-            ljono[i] = 0;
-        }
-        alkioidenLkm = 0;
-        this.kasvatuskoko = OLETUSKASVATUS;
+        this(KAPASITEETTI);
     }
 
     public IntJoukko(int kapasiteetti) {
