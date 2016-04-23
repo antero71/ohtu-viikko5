@@ -73,7 +73,25 @@ public class IntJoukko {
 
     public boolean poista(int luku) {
         int kohta = -1;
+        kohta = etsiPoistettavanKohta(luku, kohta);
+        if (kohta != -1) {
+            return poistaNumero(kohta);
+        }
+        return false;
+    }
+
+    private boolean poistaNumero(int kohta) {
         int apu;
+        for (int j = kohta; j < alkioidenLkm - 1; j++) {
+            apu = ljono[j];
+            ljono[j] = ljono[j + 1];
+            ljono[j + 1] = apu;
+        }
+        alkioidenLkm--;
+        return true;
+    }
+    
+    private int etsiPoistettavanKohta(int luku, int kohta) {
         for (int i = 0; i < alkioidenLkm; i++) {
             if (luku == ljono[i]) {
                 kohta = i; //siis luku löytyy tuosta kohdasta :D
@@ -81,16 +99,7 @@ public class IntJoukko {
                 break;
             }
         }
-        if (kohta != -1) {
-            for (int j = kohta; j < alkioidenLkm - 1; j++) {
-                apu = ljono[j];
-                ljono[j] = ljono[j + 1];
-                ljono[j + 1] = apu;
-            }
-            alkioidenLkm--;
-            return true;
-        }
-        return false;
+        return kohta;
     }
 
     private void kopioiTaulukko(int[] vanha, int[] uusi) {
