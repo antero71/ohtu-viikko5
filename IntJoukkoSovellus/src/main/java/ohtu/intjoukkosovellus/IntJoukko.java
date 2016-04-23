@@ -110,15 +110,19 @@ public class IntJoukko {
         } else if (alkioidenLkm == 1) {
             return "{" + ljono[0] + "}";
         } else {
-            String sisaltoString = "{";
-            for (int i = 0; i < alkioidenLkm - 1; i++) {
-                sisaltoString += ljono[i];
-                sisaltoString += ", ";
-            }
-            sisaltoString += ljono[alkioidenLkm - 1];
-            sisaltoString += "}";
-            return sisaltoString;
+            return muodostaJoukkoString();
         }
+    }
+
+    private String muodostaJoukkoString() {
+        String sisaltoString = "{";
+        for (int i = 0; i < alkioidenLkm - 1; i++) {
+            sisaltoString += ljono[i];
+            sisaltoString += ", ";
+        }
+        sisaltoString += ljono[alkioidenLkm - 1];
+        sisaltoString += "}";
+        return sisaltoString;
     }
 
     public int[] toIntArray() {
