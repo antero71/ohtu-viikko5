@@ -3,4 +3,10 @@ IntJoukkoSovellus/target
 LyyrakorttiMockito/target
 MockitoDemo/target
 Tennis/target
-Verkkokauppa4/target
+Verkkokauppa4/target/classes
+Verkkokauppa4/target/generated-classes 
+Verkkokauppa4/target/cobertura
+Verkkokauppa4/target/test-classes
+Verkkokauppa4/target/generated-sources 
+Verkkokauppa4/target/surefire-reports
+
