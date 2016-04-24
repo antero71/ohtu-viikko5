@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+
+<coverage line-rate="0.3645833333333333" branch-rate="0.2857142857142857" lines-covered="35" lines-valid="96" branches-covered="4" branches-valid="14" complexity="1.1944444444444444" version="2.1.1" timestamp="1461492787253">
+	<sources>
+		<source>/Users/anterooikkonen/ohtu2016/ohtu-viikko5/Verkkokauppa4/src/main/java</source>
+		<source>--source</source>
+	</sources>
+	<packages>
+		<package name="ohtu" line-rate="0.0" branch-rate="0.0" complexity="3.0">
+			<classes>
+				<class name="ohtu.Main" filename="ohtu/Main.java" line-rate="0.0" branch-rate="0.0" complexity="3.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="7" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="main" signature="([Ljava/lang/String;)V" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="10" hits="0" branch="false"/>
+								<line number="12" hits="0" branch="false"/>
+								<line number="15" hits="0" branch="false"/>
+								<line number="16" hits="0" branch="false"/>
+								<line number="17" hits="0" branch="false"/>
+								<line number="18" hits="0" branch="false"/>
+								<line number="19" hits="0" branch="false"/>
+								<line number="20" hits="0" branch="false"/>
+								<line number="23" hits="0" branch="false"/>
+								<line number="24" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="25" hits="0" branch="false"/>
+								<line number="27" hits="0" branch="false"/>
+								<line number="30" hits="0" branch="false"/>
+								<line number="32" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="33" hits="0" branch="false"/>
+								<line number="34" hits="0" branch="false"/>
+								<line number="35" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="7" hits="0" branch="false"/>
+						<line number="10" hits="0" branch="false"/>
+						<line number="12" hits="0" branch="false"/>
+						<line number="15" hits="0" branch="false"/>
+						<line number="16" hits="0" branch="false"/>
+						<line number="17" hits="0" branch="false"/>
+						<line number="18" hits="0" branch="false"/>
+						<line number="19" hits="0" branch="false"/>
+						<line number="20" hits="0" branch="false"/>
+						<line number="23" hits="0" branch="false"/>
+						<line number="24" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="25" hits="0" branch="false"/>
+						<line number="27" hits="0" branch="false"/>
+						<line number="30" hits="0" branch="false"/>
+						<line number="32" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="33" hits="0" branch="false"/>
+						<line number="34" hits="0" branch="false"/>
+						<line number="35" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+		<package name="ohtu.verkkokauppa" line-rate="0.44871794871794873" branch-rate="0.4" complexity="1.1428571428571428">
+			<classes>
+				<class name="ohtu.verkkokauppa.Kauppa" filename="ohtu/verkkokauppa/Kauppa.java" line-rate="1.0" branch-rate="1.0" complexity="1.2">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Lohtu/verkkokauppa/Varasto;Lohtu/verkkokauppa/Pankki;Lohtu/verkkokauppa/Viitegeneraattori;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="16" hits="14" branch="false"/>
+								<line number="17" hits="14" branch="false"/>
+								<line number="18" hits="14" branch="false"/>
+								<line number="19" hits="14" branch="false"/>
+								<line number="20" hits="14" branch="false"/>
+								<line number="21" hits="14" branch="false"/>
+							</lines>
+						</method>
+						<method name="aloitaAsiointi" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="24" hits="14" branch="false"/>
+								<line number="25" hits="14" branch="false"/>
+							</lines>
+						</method>
+						<method name="lisaaKoriin" signature="(I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="33" hits="24" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="34" hits="20" branch="false"/>
+								<line number="35" hits="20" branch="false"/>
+								<line number="36" hits="20" branch="false"/>
+								<line number="38" hits="24" branch="false"/>
+							</lines>
+						</method>
+						<method name="poistaKorista" signature="(I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="28" hits="2" branch="false"/>
+								<line number="29" hits="2" branch="false"/>
+								<line number="30" hits="2" branch="false"/>
+							</lines>
+						</method>
+						<method name="tilimaksu" signature="(Ljava/lang/String;Ljava/lang/String;)Z" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="41" hits="14" branch="false"/>
+								<line number="42" hits="14" branch="false"/>
+								<line number="44" hits="14" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="16" hits="14" branch="false"/>
+						<line number="17" hits="14" branch="false"/>
+						<line number="18" hits="14" branch="false"/>
+						<line number="19" hits="14" branch="false"/>
+						<line number="20" hits="14" branch="false"/>
+						<line number="21" hits="14" branch="false"/>
+						<line number="24" hits="14" branch="false"/>
+						<line number="25" hits="14" branch="false"/>
+						<line number="28" hits="2" branch="false"/>
+						<line number="29" hits="2" branch="false"/>
+						<line number="30" hits="2" branch="false"/>
+						<line number="33" hits="24" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="34" hits="20" branch="false"/>
+						<line number="35" hits="20" branch="false"/>
+						<line number="36" hits="20" branch="false"/>
+						<line number="38" hits="24" branch="false"/>
+						<line number="41" hits="14" branch="false"/>
+						<line number="42" hits="14" branch="false"/>
+						<line number="44" hits="14" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Kirjanpito" filename="ohtu/verkkokauppa/Kirjanpito.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.KirjanpitoImpl" filename="ohtu/verkkokauppa/KirjanpitoImpl.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="12" hits="0" branch="false"/>
+								<line number="13" hits="0" branch="false"/>
+								<line number="14" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="getTapahtumat" signature="()Ljava/util/ArrayList;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="lisaaTapahtuma" signature="(Ljava/lang/String;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="18" hits="0" branch="false"/>
+								<line number="19" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="12" hits="0" branch="false"/>
+						<line number="13" hits="0" branch="false"/>
+						<line number="14" hits="0" branch="false"/>
+						<line number="18" hits="0" branch="false"/>
+						<line number="19" hits="0" branch="false"/>
+						<line number="23" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Ostoskori" filename="ohtu/verkkokauppa/Ostoskori.java" line-rate="0.8333333333333334" branch-rate="1.0" complexity="1.25">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="9" hits="14" branch="false"/>
+								<line number="10" hits="14" branch="false"/>
+								<line number="11" hits="14" branch="false"/>
+							</lines>
+						</method>
+						<method name="hinta" signature="()I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="22" hits="14" branch="false"/>
+								<line number="24" hits="14" branch="true" condition-coverage="100% (2/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="100%"/>
+									</conditions>
+								</line>
+								<line number="25" hits="20" branch="false"/>
+								<line number="26" hits="20" branch="false"/>
+								<line number="28" hits="14" branch="false"/>
+							</lines>
+						</method>
+						<method name="lisaa" signature="(Lohtu/verkkokauppa/Tuote;)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="14" hits="20" branch="false"/>
+								<line number="15" hits="20" branch="false"/>
+							</lines>
+						</method>
+						<method name="poista" signature="(Lohtu/verkkokauppa/Tuote;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="18" hits="0" branch="false"/>
+								<line number="19" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="9" hits="14" branch="false"/>
+						<line number="10" hits="14" branch="false"/>
+						<line number="11" hits="14" branch="false"/>
+						<line number="14" hits="20" branch="false"/>
+						<line number="15" hits="20" branch="false"/>
+						<line number="18" hits="0" branch="false"/>
+						<line number="19" hits="0" branch="false"/>
+						<line number="22" hits="14" branch="false"/>
+						<line number="24" hits="14" branch="true" condition-coverage="100% (2/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="100%"/>
+							</conditions>
+						</line>
+						<line number="25" hits="20" branch="false"/>
+						<line number="26" hits="20" branch="false"/>
+						<line number="28" hits="14" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Pankki" filename="ohtu/verkkokauppa/Pankki.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.PankkiImpl" filename="ohtu/verkkokauppa/PankkiImpl.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Lohtu/verkkokauppa/Kirjanpito;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="12" hits="0" branch="false"/>
+								<line number="13" hits="0" branch="false"/>
+								<line number="14" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="tilisiirto" signature="(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;I)Z" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="18" hits="0" branch="false"/>
+								<line number="22" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="12" hits="0" branch="false"/>
+						<line number="13" hits="0" branch="false"/>
+						<line number="14" hits="0" branch="false"/>
+						<line number="18" hits="0" branch="false"/>
+						<line number="22" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Tuote" filename="ohtu/verkkokauppa/Tuote.java" line-rate="0.6" branch-rate="0.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="(ILjava/lang/String;I)V" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="9" hits="22" branch="false"/>
+								<line number="10" hits="22" branch="false"/>
+								<line number="11" hits="22" branch="false"/>
+								<line number="12" hits="22" branch="false"/>
+								<line number="13" hits="22" branch="false"/>
+							</lines>
+						</method>
+						<method name="equals" signature="(Ljava/lang/Object;)Z" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="17" hits="0" branch="false"/>
+								<line number="19" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+							</lines>
+						</method>
+						<method name="getHinta" signature="()I" line-rate="1.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="27" hits="20" branch="false"/>
+							</lines>
+						</method>
+						<method name="getId" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="23" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="toString" signature="()Ljava/lang/String;" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="32" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="9" hits="22" branch="false"/>
+						<line number="10" hits="22" branch="false"/>
+						<line number="11" hits="22" branch="false"/>
+						<line number="12" hits="22" branch="false"/>
+						<line number="13" hits="22" branch="false"/>
+						<line number="17" hits="0" branch="false"/>
+						<line number="19" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="23" hits="0" branch="false"/>
+						<line number="27" hits="20" branch="false"/>
+						<line number="32" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Varasto" filename="ohtu/verkkokauppa/Varasto.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.VarastoImpl" filename="ohtu/verkkokauppa/VarastoImpl.java" line-rate="0.0" branch-rate="0.0" complexity="1.5">
+					<methods>
+						<method name="&lt;init&gt;" signature="(Lohtu/verkkokauppa/Kirjanpito;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="14" hits="0" branch="false"/>
+								<line number="15" hits="0" branch="false"/>
+								<line number="16" hits="0" branch="false"/>
+								<line number="17" hits="0" branch="false"/>
+								<line number="18" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="alustaTuotteet" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="47" hits="0" branch="false"/>
+								<line number="48" hits="0" branch="false"/>
+								<line number="49" hits="0" branch="false"/>
+								<line number="50" hits="0" branch="false"/>
+								<line number="51" hits="0" branch="false"/>
+								<line number="52" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="haeTuote" signature="(I)Lohtu/verkkokauppa/Tuote;" line-rate="0.0" branch-rate="0.0" complexity="0">
+							<lines>
+								<line number="22" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="23" hits="0" branch="true" condition-coverage="0% (0/2)">
+									<conditions>
+										<condition number="0" type="jump" coverage="0%"/>
+									</conditions>
+								</line>
+								<line number="24" hits="0" branch="false"/>
+								<line number="26" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="otaVarastosta" signature="(Lohtu/verkkokauppa/Tuote;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="36" hits="0" branch="false"/>
+								<line number="37" hits="0" branch="false"/>
+								<line number="38" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="palautaVarastoon" signature="(Lohtu/verkkokauppa/Tuote;)V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="42" hits="0" branch="false"/>
+								<line number="43" hits="0" branch="false"/>
+								<line number="44" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="saldo" signature="(I)I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="31" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="14" hits="0" branch="false"/>
+						<line number="15" hits="0" branch="false"/>
+						<line number="16" hits="0" branch="false"/>
+						<line number="17" hits="0" branch="false"/>
+						<line number="18" hits="0" branch="false"/>
+						<line number="22" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="23" hits="0" branch="true" condition-coverage="0% (0/2)">
+							<conditions>
+								<condition number="0" type="jump" coverage="0%"/>
+							</conditions>
+						</line>
+						<line number="24" hits="0" branch="false"/>
+						<line number="26" hits="0" branch="false"/>
+						<line number="31" hits="0" branch="false"/>
+						<line number="36" hits="0" branch="false"/>
+						<line number="37" hits="0" branch="false"/>
+						<line number="38" hits="0" branch="false"/>
+						<line number="42" hits="0" branch="false"/>
+						<line number="43" hits="0" branch="false"/>
+						<line number="44" hits="0" branch="false"/>
+						<line number="47" hits="0" branch="false"/>
+						<line number="48" hits="0" branch="false"/>
+						<line number="49" hits="0" branch="false"/>
+						<line number="50" hits="0" branch="false"/>
+						<line number="51" hits="0" branch="false"/>
+						<line number="52" hits="0" branch="false"/>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.Viitegeneraattori" filename="ohtu/verkkokauppa/Viitegeneraattori.java" line-rate="1.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+					</methods>
+					<lines>
+					</lines>
+				</class>
+				<class name="ohtu.verkkokauppa.ViitegeneraattoriImpl" filename="ohtu/verkkokauppa/ViitegeneraattoriImpl.java" line-rate="0.0" branch-rate="1.0" complexity="1.0">
+					<methods>
+						<method name="&lt;init&gt;" signature="()V" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="10" hits="0" branch="false"/>
+								<line number="11" hits="0" branch="false"/>
+								<line number="12" hits="0" branch="false"/>
+							</lines>
+						</method>
+						<method name="uusi" signature="()I" line-rate="0.0" branch-rate="1.0" complexity="0">
+							<lines>
+								<line number="16" hits="0" branch="false"/>
+							</lines>
+						</method>
+					</methods>
+					<lines>
+						<line number="10" hits="0" branch="false"/>
+						<line number="11" hits="0" branch="false"/>
+						<line number="12" hits="0" branch="false"/>
+						<line number="16" hits="0" branch="false"/>
+					</lines>
+				</class>
+			</classes>
+		</package>
+	</packages>
+</coverage>
